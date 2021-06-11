@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html raiz-controller="Main" class="">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title ></title>
+    
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="../dist/1.0.0/vizoo.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/base.css">
+
+	<style type="text/css">
+		.--custom.container{
+			background-color: yellow;
+		}		
+
+		.line-example{
+		}.line-example .line {
+		}.line-example .line > div{
+			border:1px solid #aaa;
+			/*padding: 10px;*/
+			background-color: transparent;
+		}.line-example .line > div{
+		}
+
+		.lineex{
+			box-shadow: 0 0 0 1px #fff inset, 0 0 0 5px #9a9a9a inset;
+    		padding: 10px;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function theme(value){
+			document.body.classList.remove('--default');
+			document.body.classList.remove('--dark');
+			
+			if(value !== 'default')
+				document.body.classList.add('--'+value);
+		}
+	</script>
+
+</head>
+<body class="--default font-arial">
+
+	<div class="wrapper">
+		<div class="header ">
+			
+		</div>
+		<div class="main ">
+			
+
+			<div class="line mobile-nobreak tablet-nobreak ">
+				<div class="column col3 top tablet-drawer-menu mobile-drawer-menu " tabindex="-1">
+					
+					<div class="line  sticky vh100 padding ">
+						
+						<div class="wrapper">
+							<div class="main">
+								
+								<a href="." class="decoration-none w100">
+									<div class="line mobile-nobreak">
+										
+										<div class="column col6 middle">
+
+											<h1 class="drawer-menu-title">
+												Vizu
+											</h1>
+										</div>
+										<div class="column col1 center middle ">
+											<img src="assets/img/favicon.png" style="width: 20px;">				
+										</div>
+									</div>
+
+
+
+								</a>
+								
+
+								<hr class="-separator -small">
+
+								<ul class="drawer-menu-list">
+									<li><a href="#cdn" >CDN</a></li>
+									<li><a href="#heading" >Heading</a></li>
+									<li><a href="#table" >Table</a></li>
+									<li><a href="#list" >List</a></li>
+									<li><a href="#form" >Form</a></li>
+									<li><a href="#button" >Button</a></li>
+									<li><a href="#link" >Link</a></li>
+									<li><a href="#theme" >Theme</a></li>
+									<li><a href="#paragraph" >Paragraph</a></li>
+									<li><a href="#grid" >Grid</a></li>
+									<li><a href="#others" >Others Elements</a></li>
+								</ul>
+							</div>
+							<div class="footer">
+
+
+								<div class="line ">
+									<div class="column col6">
+										<a href="https://wallrio.com" title="wallrio.com">wallrio.com</a>
+									</div>
+									<div class="column col6 right">
+											 <small >v1.0</small>
+									</div>
+								</div>
+							
+								
+
+							
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+				<div class="column ">
+					
+					<div class="sticky padding page-header">
+						
+						<label class="-inline ">Theme:</label>
+
+						<ul class="-horizontal">
+							<li><a onclick="theme('default')" class="-primary padding-right">Default</a></li>
+							<li><a onclick="theme('dark')" class="-primary padding-right">Dark</a></li>
+						</ul>
+					</div>
+
+					
+
+
+					<!-- CDN -->
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="cdn"></a>
+						<div class="container">
+
+							<h2 class="margin-bottom-30">CDN </h2>
+
+							<div class="line ">
+								<div class="column col6 ">
+									
+									<pre class="code" ><code class="">https://cdn.jsdelivr.net/gh/vizucss/core@master/vizu.min.css
+									</code></pre>
+
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<hr>
+				
+
+				<!-- Heading -->
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="heading"></a>
+						<div class="container">
+
+							<h2 class="margin-bottom-30">Heading </h2>
+
+							<div class="line ">
+								<div class="column col6 ">
+									
+									<h1>h1</h1>
+									<h2>h2</h2>
+									<h3>h3</h3>
+									<h4>h4</h4>
+									<h5>h5</h5>
+									<h6>h6</h6>
+
+
+
+								</div>
+							</div>
+
+						
+							<hr class="-separator -small">
+
+							<details>
+							  <summary class="-primary-text">Code</summary>
+							  
+<pre class="code vh30" ><code class="">&lt;h1>h1&lt;/h1>
+&lt;h2>h2&lt;/h2>
+&lt;h3>h3&lt;/h3>
+&lt;h4>h4&lt;/h4>
+&lt;h5>h5&lt;/h5>
+&lt;h6>h6&lt;/h6></code></pre>
+
+							</details>
+
+						</div>
+
+					</div>
+
+					<hr>
+
+					<!-- TABLE -->
+
+<!-- Table		 -->
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="table"></a>
+						<div class="container">
+
+							<h2 class="margin-bottom-30">Table </h2>
+
+							<div class="line ">
+								<div class="column col6 padding-right padding-bottom ">
+							
+								<table>
+										<tr>
+										    <th>User 1</th>
+											<td>Fulano</td>
+											<td>Age 35</td>
+											<td>Gender Male</td>
+										  </tr>
+										<tr>
+											<th>User 2</th>
+											<td>Ciclano</td>
+											<td>Age 21</td>
+											<td>Gender Male</td>
+										</tr>
+										<tr>
+											<th>User 3</th>
+											<td>Beltrana</td>
+											<td>Age 25</td>
+											<td>Gender Female</td>
+										</tr>
+									</table>
+
+								</div>
+							</div>
+
+							<hr class="-separator -small">
+
+							<details>
+							  <summary class="-primary-text">Code</summary>
+							  
+<pre class="code vh30" ><code class="">&lt;table>
+	&lt;tr>
+	    &lt;th>User 1&lt;/th>
+		&lt;td>Fulano&lt;/td>
+		&lt;td>Age 35&lt;/td>
+		&lt;td>Gender Male&lt;/td>
+	  &lt;/tr>
+	&lt;tr>
+		&lt;th>User 2&lt;/th>
+		&lt;td>Ciclano&lt;/td>
+		&lt;td>Age 21&lt;/td>
+		&lt;td>Gender Male&lt;/td>
+	&lt;/tr>
+	&lt;tr>
+		&lt;th>User 3&lt;/th>
+		&lt;td>Beltrana&lt;/td>
+		&lt;td>Age 25&lt;/td>
+		&lt;td>Gender Female&lt;/td>
+	&lt;/tr>
+&lt;/table>	
+</code></pre>
+
+							</details>
+
+
+
+<!-- Table (horizontal)		 -->
+
+							<hr class="-separator">
+
+							<h3>Table (horizontal)</h3>
+
+							<div class="line ">
+								<div class="column col6 padding-right padding-bottom ">
+
+									<div class="scroll-x">
+										<table class="horizontal">
+											<tr>
+											    <th>User 1</th>
+											    <th>User 2</th>
+											    <th>User 3</th>
+											</tr>
+											<tr>
+												<td header="User 1">Fulano</td>
+												<td header="User 2">Ciclano</td>
+												<td header="User 3">Beltrana</td>
+											</tr>
+											<tr>
+												<td header="User 1">Age 35</td>
+												<td header="User 2">Age 21</td>
+												<td header="User 3">Age 25</td>
+											</tr>
+											<tr>
+												<td header="User 1">Gender Male</td>
+												<td header="User 2">Gender Male</td>
+												<td header="User 3">Gender Female</td>
+											</tr>
+										</table>
+									</div>
+
+								</div>
+								
+							</div>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code</summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>
+
+					
+
+					<hr>
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="list"></a>
+						<div class="container">
+
+							<h2 class="margin-bottom-30">List </h2>
+
+							<div class="line ">
+								<div class="column col3 padding ">
+									<ul>
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+										<li>Item 4</li>
+									</ul>
+								</div>
+								<div class="column padding  ">
+									<ul class="">
+										<li><a>Item 1</a></li>
+										<li><a>Item 2</a></li>
+										<li><a>Item 3</a></li>
+										<li><a>Item 4</a></li>
+									</ul>
+
+								</div>	
+								<div class="column padding">
+									<ul class="-separator">
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+										<li>Item 4</li>
+									</ul>
+								</div>	
+								<div class="column padding">
+									<ul class="style-none">
+										<li><a>Item 1</a></li>
+										<li><a>Item 2</a></li>
+										<li><a>Item 3</a></li>
+										<li><a>Item 4</a></li>
+									</ul>
+								</div>						
+							</div>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code</summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<hr class="-separator">
+
+							<h2 class="margin-bottom-30">List Style</h2>
+
+							<div class="line ">
+								<div class="column col3 padding ">
+									<ul >
+									
+										<li>
+											Item 1
+											<cite>cite 1</cite>
+										</li>
+										<li>
+											Item 2
+											<cite>cite 2</cite>
+										</li>
+										<li>
+											Item 3
+											<cite>cite 3</cite>
+										</li>
+										<li>
+											Item 4
+											<cite>cite 4</cite>
+										</li>
+									</ul>
+								</div>
+								<div class="column col3 padding ">
+									<ul class="style-none">
+									
+										<li>
+											Item 1
+											<cite>cite 1</cite>
+										</li>
+										<li>
+											Item 2
+											<cite>cite 2</cite>
+										</li>
+										<li>
+											Item 3
+											<cite>cite 3</cite>
+										</li>
+										<li>
+											Item 4
+											<cite>cite 4</cite>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="column padding">
+									<ul class="style-none">
+										<li>
+											<div class="text-icon">												
+												<div class="icon padding">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content">
+													Item 1
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="text-icon">												
+												<div class="icon padding">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content">
+													Item 1
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="text-icon -primary">												
+												<div class="icon padding">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content padding-right">
+													Item 1
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="text-icon  -primary-text">												
+												<div class="icon padding">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content">
+													Item 1
+												</div>
+											</div>
+										</li>
+										
+										
+									</ul>
+								</div>	
+								<div class="column padding">
+									<ul class="style-none">
+										<li>
+											<a class="text-icon ">												
+												<div class="icon padding">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content ">
+													Item 1
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="text-icon">												
+												<div class="icon padding">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content">
+													Item 1
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="text-icon ">												
+												<div class="icon padding">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content">
+													Item 1
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="text-icon link -success">												
+												<div class="icon padding ">
+													<i class="fa fa-thumbs-up"></i>
+												</div>
+												<div class="content">
+													Item 1
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code</summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>
+
+					
+					
+					<hr>
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="table"></a>
+						<div class="container">
+							<a name="form"></a>
+							<h2 class="margin-bottom-30">Form </h2>
+
+							<form>
+
+								<div class="line ">
+									<div class="column col3 padding-right ">
+										
+
+										<label>Field</label>
+										<input type="text" name="name" placeholder="Field" class="input w100 ">
+										<cite></cite>
+
+										<label>Field</label>
+										<input type="text" name="name" placeholder="Field" class="input w100 ">
+
+									</div>
+									<div class="column padding-right  ">							
+										
+										<label>Field</label>
+										<input type="text" name="name" placeholder="Field" class="input w100 ">
+										<cite>This is optional comment of a citation</cite>
+
+										<label>Field</label>
+										<input type="text" name="name" placeholder="Field" class="input w100 ">
+
+									</div>	
+									<div class="column   ">							
+										
+										<label>Field</label>
+										<input type="text" name="name" placeholder="Field" class="input w100 ">
+										<cite>This is optional comment of a citation</cite>
+
+										<label>Field</label>
+										<input type="text" name="name" placeholder="Field" class="input w100 ">
+
+									</div>						
+								</div>
+								
+								<div class="line">
+
+									<div class="column col5 top padding-right ">		
+
+										<label class="file w100"><input type="file"></label>
+
+										<label class="checkbox"><input type="checkbox" name=""> <span>Checkbox</span></label>
+										<label class="radio" ><input type="radio" name="radio" checked> <span>Radio 1</span></label>							
+										<label class="radio"><input type="radio" name="radio"> <span>Radio 2</span></label>							
+
+									</div>
+									<div class="column top col2 padding-right">		
+
+										<select class="select w100" id="sel">
+											<option>item 1</option>
+											<option>item 2</option>
+											<option>item 3</option>
+											<option>item 4</option>
+										</select>
+
+									</div>
+									<div class="column top  ">		
+
+										<input type="text" name="name" placeholder="Field" class="input w100 ">
+
+
+									</div>
+								</div>
+									
+								<input type="button" value="Submit" class="button -primary margin-h-0 margin-top-20 margin-bottom-20">
+								<input type="button" value="Cancel" class="button -border margin-h-0 margin-top-20 margin-bottom-20">
+								
+							
+								
+							</form>
+
+							<hr class="-separator -small">
+
+							<details>
+							  <summary class="-primary-text">Code Input</summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<details>
+							  <summary class="-primary-text">Code Select</summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<details>
+							  <summary class="-primary-text">Code Checkbox</summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<details>
+							  <summary class="-primary-text">Code Radio</summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<details>
+							  <summary class="-primary-text">Code Input File </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+
+							<hr class="-separator ">
+
+							<h2 class="margin-bottom-30">Form flat</h2>
+
+							<form>
+
+								<div class="line mobile-nobreak">
+									<div class="column col3 padding-right ">
+										
+
+										<div class="input-float flatmodel  ">
+										      <input type="text" required />
+										      <label class="">User ID</label>
+										</div>
+										<cite>This is optional comment of a citation</cite>	
+								
+										<div class="input-float flatmodel">
+										      <input type="text" required />
+										      <label >User ID</label>
+										</div>
+										
+									
+									</div>
+									<div class="column col3  ">
+
+										<div class="input-float flatmodel">
+										      <input type="text" required />
+										      <label >User ID</label>
+										</div>
+										<cite>This is optional comment of a citation</cite>	
+								
+										<div class="input-float flatmodel">
+										      <input type="text" required />
+										      <label >User ID</label>
+										</div>
+
+									</div>
+								</div>
+							</form>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code Input </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="button"></a>
+						<div class="container">
+							
+
+							<h2>Button (a)</h2>
+
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom">*default</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -primary  ">-primary</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -secondary ">-secondary</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -success ">-success</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -error ">-error</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -warning ">-warning</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -invert ">-invert</a>	
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -border " >-border</a>	
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -link " >-link</a>	
+							
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+
+							<hr class="-separator  ">
+
+							<h2>Button (button)</h2>
+
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom">*default</button>
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -primary  ">-primary</button>
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -secondary ">-secondary</button>
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -success ">-success</button>
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -error ">-error</button>
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -warning ">-warning</button>
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -invert ">-invert</button>
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -border " >-border</button>	
+							<button class="button mobile-w100 mobile-center margin-right margin-bottom -link " >-link</button>
+							
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<hr class="-separator  ">
+
+							<h2>Button disabled</h2>
+							
+									
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom " disabled>*default disabled</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -primary  " disabled>-primary disabled</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -secondary " disabled>-secondary disabled</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -success " disabled>-success disabled</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -error " disabled>-error disabled</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -warning " disabled>-warning disabled</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -invert " disabled>-invert disabled</a>	
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -border " disabled>-border disabled</a>	
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -link " disabled>-link disabled</a>	
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<hr class="-separator  ">
+
+							<h2>Button loading</h2>
+
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom loading">*default loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -primary  loading">-primary loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -secondary loading">-secondary loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -success loading">-success loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -error loading">-error loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -warning loading">-warning loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -invert loading ">-invert loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -border loading ">-border loading</a>
+							<a class="button mobile-w100 mobile-center margin-right margin-bottom -link loading ">-link loading</a>
+							
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="link"></a>
+						<div class="container">
+							
+							<h2>Link</h2>
+
+							<a class="link mobile-w100 mobile-center ">link</a> &nbsp;
+							<a class="link mobile-w100 mobile-center -primary ">-primary</a> &nbsp;
+							<a class="link mobile-w100 mobile-center -secondary ">-secondary</a> &nbsp;
+							<a class="link mobile-w100 mobile-center -success ">-success</a> &nbsp;
+							<a class="link mobile-w100 mobile-center -error ">-error</a> &nbsp;
+							<a class="link mobile-w100 mobile-center -warning ">-warning</a> &nbsp;
+							<a class="link mobile-w100 mobile-center -invert ">-invert</a> &nbsp;
+
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="theme"></a>
+						<div class="container">
+
+
+							<h2>Theme -dark</h2>
+
+							<div class="--dark padding-20 ">
+							
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom ">*default</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -primary  ">-primary</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -secondary ">-secondary</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -success ">-success</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -error ">-error</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -warning ">-warning</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -invert ">-invert</a>	
+
+
+							</div>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<hr class="-separator ">
+
+							<h2>Theme --default</h2>
+
+							<div class="--default padding-20">
+							
+							
+
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom ">*default</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -primary  ">-primary</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -secondary ">-secondary</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -success ">-success</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -error ">-error</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -warning ">-warning</a>
+								<a class="button mobile-w100 mobile-center margin-right margin-bottom -invert ">-invert</a>	
+
+
+							</div>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<hr class="-separator">
+							<h2>Custom theme</h2>
+							<p></p>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="paragraph"></a>
+						<div class="container">
+
+							<h2>Paragraph</h2>
+							<p class="justify">Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in <strong>reprehenderit</strong> in voluptate velit esse.
+							</p>
+
+							<p class="justify">
+							cillum dolore eu <strong>fugiat</strong> nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>	
+
+					<hr>
+
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="paragraph"></a>
+						<div class="container">
+
+							<h2>Color Alternate</h2>
+							
+							<div class="line alternate-bg">
+								<div class="column center padding">
+									1
+								</div>
+								<div class="column center padding">
+									2
+								</div>
+								<div class="column center padding">
+									3
+								</div>
+								<div class="column center padding">
+									4
+								</div>
+								<div class="column center padding">
+									5
+								</div>
+								<div class="column center padding">
+									6
+								</div>
+							</div>
+
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						</div>
+					</div>	
+
+					<hr>
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="grid"></a>
+						<div class="container">
+
+							<h2>Grid </h2>
+
+							<div class="line-example">
+								<div class="line mobile-nobreak">
+									<div class="column col3 center padding">
+										column col3
+									</div>
+									<div class="column center padding ">							
+										column col3
+									</div>
+									<div class="column center padding">							
+										column col3
+									</div>
+								</div>
+							</div>
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+							<hr class="-separator">
+							
+							<h2>Grid (mixed)</h2>
+
+							<div class="line-example">
+								<div class="line tablet-nobreak">
+									<div class="line center padding">							
+										line
+									</div>
+									<div class="line center padding">							
+										line
+									</div>
+									<div class="line center padding">							
+										line
+									</div>
+									<div class="column col2 middle center padding ">
+										column col2
+									</div>
+									<div class="column center middle padding ">						
+										column 
+									</div>
+									<div class="line center padding">							
+										line
+									</div>
+									<div class="line center padding">							
+										line
+									</div>
+									<div class="line center padding">							
+										line
+									</div>
+								</div>
+							</div>
+
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+
+							<hr class="-separator ">
+
+							<h2>Grid (by lot)</h2>
+
+							<div class="line-example">
+								<div class="line mobile-nobreak">
+									<div class="column col3-p center middle padding">
+										column col3-p
+									</div>
+									<div class="column center padding">							
+										column col3-p
+									</div>
+									<div class="column center padding">							
+										column col3-p
+									</div>
+								</div>
+							</div>
+
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+
+							<hr class="-separator">
+
+							<h2>Grid (porcentage in content inner)</h2>
+
+							<div class="line-example ">
+								<div class="line tablet-nobreak vh50 ">
+									<div class="column  padding col4 no-spacing">
+										<div class="h50 w50 lineex" >h50 w50</div>
+										<div class="h100 w50 lineex" >h100 h50</div>
+									</div>
+									<div class="column  padding">
+										<div class="lineex h50 w50">h50 w50</div>
+										<div class="lineex h50">h50</div>
+									</div>
+								</div>
+							</div>
+
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code class=""></code></pre>
+							</details>
+
+						
+
+						</div>
+					</div>
+
+
+					<hr>
+
+					<!-- OTHERS ELEMENTS  -->
+
+					<div class="line padding-top-20 padding-bottom-40">
+						<a name="others"></a>
+						<div class="container">
+
+							<h2 class="margin-bottom-30">Others Elements </h2>
+							
+
+							<h4 class="margin-bottom-30">Code</h4>
+
+							<div class="line ">
+								<div class="column col6 padding-right padding-bottom ">
+							
+<pre class="code vh20" ><code class="">function test(){
+	var test = "test;
+	
+	if(test){
+		alert(test);
+	}
+}</code></pre>
+
+
+
+								</div>
+							</div>
+
+
+
+
+							<hr class="-separator -small">
+							<details>
+							  <summary class="-primary-text">Code </summary>
+							  <pre class="code vh30" ><code>&lt;pre class="code vh30" >&lt;code>&lt;/code>&lt;/pre></code></pre>
+							</details>
+
+
+						</div>
+					</div>
+
+					
+
+		
+				</div>
+			</div>
+
+
+		</div>
+		<div class="footer ">
+		
+			<!-- <div class="line page-footer">
+				<div class="container padding">
+					<div class="line ">
+						<div class="column col6">
+							
+						</div>
+						<div class="column col6 right">
+							<a href="https://wallrio.com">wallrio.com</a>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		</div>	
+	</div>
+
+</body>
+</html>
