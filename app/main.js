@@ -1,5 +1,7 @@
-var main = new (function(){
+var main = (function(){
 	var self = this;
+
+
 
 	self.construct = function(){
 
