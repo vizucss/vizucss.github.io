@@ -1,0 +1,17 @@
+.--custom.container{
+	background-color: yellow;
+}		
+
+.line-example{
+}.line-example .line {
+}.line-example .line > div{
+	border:1px solid #aaa;
+	/*padding: 10px;*/
+	background-color: transparent;
+}.line-example .line > div{
+}
+
+.lineex{
+	box-shadow: 0 0 0 1px #fff inset, 0 0 0 5px #9a9a9a inset;
+	padding: 10px;
+}
