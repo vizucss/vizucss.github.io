@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html raiz-controller="main" class="">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/png" href="app/assets/img/favicon.png">
+
+    <title >Vizu</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vizucss/core@master/vizu.min.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/assets/css/style.css">
+    	
+
+ 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/raizjs/raiz@1.0.7/dist/raiz.min.js"></script>    
+    <!-- <script type="text/javascript" src="app/dest/components.js"></script> -->
+    <script type="text/javascript" src="app/filters.js"></script>
+    <script type="text/javascript" src="app/main.js"></script>
+
+</head>
+<body class="--default font-arial">
+
+	<div class="wrapper">
+		<div class="header ">
+			
+		</div>
+		<div class="main ">
+			
+
+			<div class="line mobile-nobreak tablet-nobreak ">
+				<div class="column col3 top tablet-drawer-menu mobile-drawer-menu " tabindex="-1">
+					<div class="line  sticky vh100 padding ">
+						<raiz-component name="app::sections/menu" class="h100"></raiz-component>
+					</div>
+					
+				</div>
+				<div class="column ">
+					
+					
+
+					
+					<div class="wrapper">
+						<div class="header">
+							
+							<div class="sticky padding page-header">
+						
+								<label class="-inline ">Theme:</label>
+
+								<ul class="list -horizontal">
+									<li><a select-theme="default" class="-primary padding-right">Default</a></li>
+									<li><a select-theme="dark" class="-primary padding-right">Dark</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="main">
+
+							<!-- CDN -->
+							<raiz-component name="app::sections/elements/cdn"></raiz-component>
+
+							<hr>
+						
+							<!-- Heading -->
+							<raiz-component name="app::sections/elements/heading"></raiz-component>
+
+							<hr>
+
+							<!-- TABLE -->								
+							<raiz-component name="app::sections/elements/table"></raiz-component>
+
+							<hr>
+
+							<!-- LIST -->								
+							<raiz-component name="app::sections/elements/list"></raiz-component>
+							
+							<hr>
+
+							<!-- FORM -->								
+							<raiz-component name="app::sections/elements/form"></raiz-component>
+
+							<hr>
+
+							<!-- BUTTON -->								
+							<raiz-component name="app::sections/elements/button"></raiz-component>
+
+							<hr>
+
+							<!-- LINK -->								
+							<raiz-component name="app::sections/elements/link"></raiz-component>
+
+							<hr>
+
+							<!-- THEME -->								
+							<raiz-component name="app::sections/elements/theme"></raiz-component>
+
+							<hr>
+
+							<!-- PARAGRAPH -->								
+							<raiz-component name="app::sections/elements/paragraph"></raiz-component>
+
+							<hr>
+
+							<!-- PARAGRAPH -->								
+							<raiz-component name="app::sections/elements/grid"></raiz-component>
+
+							<hr>
+
+							<!-- OTHERS ELEMENTS  -->					
+							<raiz-component name="app::sections/elements/others"></raiz-component>
+								
+						</div>
+						<div class="footer">
+							<div class="line padding">
+								<div class="column col6">
+									
+								</div>
+								<div class="column col6 right">
+										<a class="-secondary" href="https://wallrio.com" title="wallrio.com">wallrio.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+
+
+		</div>
+		<div class="footer ">
+		
+			
+
+		</div>	
+	</div>
+
+</body>
+</html>

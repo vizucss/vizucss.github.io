@@ -1,3 +1,7 @@
+.drawer-menu-title{
+    font-family: system-ui !important;
+}
+
 .--custom.container{
 	background-color: yellow;
 }		
@@ -14,4 +18,34 @@
 .lineex{
 	box-shadow: 0 0 0 1px #fff inset, 0 0 0 5px #9a9a9a inset;
 	padding: 10px;
+}
+
+[taghigh]{
+	display: inline-table;
+	color: #084db1;
+	/*font-size: 12px;*/
+}[tag="tab"]{
+	display: inline-table;
+    height: 11px;
+    width: 24px;
+}[tag="newline"]{
+	display: table;
+}
+
+.popup_simple > .popup_simple_box{
+	display: none;
+}.popup_simple:focus > .popup_simple_box{	
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /*width: 70%;*/
+    /*height: 70%;*/
+    max-width: 70%;
+    max-height: 70%;
+    z-index: 1000000;
+    display: block;
+    overflow-y: scroll;
+    border: 5px solid;
+    border-radius: 4px;
 }

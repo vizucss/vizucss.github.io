@@ -5,6 +5,138 @@
 			<a name="form"></a>
 			<h2 class="margin-bottom-30">Form </h2>
 
+
+			<h3>Input</h3>
+			<div class="line ">
+				<div class="column col2 padding-right ">
+
+					<label>Field</label>
+					<input type="text" name="name" placeholder="Field" class="input w100 ">
+					<cite>&nbsp;</cite>
+
+					<hr class="-separator -small">
+					<a class="popup_simple" tabindex="-1">
+						Code
+						<span class="popup_simple_box">
+							<raiz-component name="{package-url}::/doc/input"></raiz-component>
+						</span>
+					</a>
+
+
+				</div>
+				<div class="column col4  padding-right ">
+
+					<label>Field</label>
+					<input type="text" name="name" placeholder="Field" class="input w100 ">
+					<cite>This is optional comment of a citation</cite>
+
+					<hr class="-separator -small">
+					<a class="popup_simple" tabindex="-1">
+						Code
+						<span class="popup_simple_box">
+							<raiz-component name="{package-url}::/doc/input_cite"></raiz-component>
+						</span>
+					</a>
+
+				</div>
+				<div class="column  padding-right ">
+
+					<label>Input File</label>
+					<label class="file"><input type="file"></label>
+					<cite>&nbsp;</cite>
+
+					<hr class="-separator -small">
+					<a class="popup_simple" tabindex="-1">
+						Code
+						<span class="popup_simple_box">
+							<raiz-component name="{package-url}::/doc/input_file"></raiz-component>
+						</span>
+					</a>
+
+				</div>
+				<div class="column col3 padding-right ">
+
+					<label>Select</label>
+					<select class="select w100" id="sel">
+						<option>item 1</option>
+						<option>item 2</option>
+						<option>item 3</option>
+						<option>item 4</option>
+					</select>
+					<cite>&nbsp;</cite>
+
+					<hr class="-separator -small">
+					<a class="popup_simple" tabindex="-1">
+						Code
+						<span class="popup_simple_box">
+							<raiz-component name="{package-url}::/doc/input_select"></raiz-component>
+						</span>
+					</a>
+
+				</div>
+			</div>
+
+			<hr class="-separator -middle">
+			
+			<div class="line ">
+				<div class="column col3 padding-right ">
+
+					<label class="checkbox"><input type="checkbox"> <span>Checkbox</span></label>
+
+					<hr class="-separator -small">
+					<a class="popup_simple" tabindex="-1">
+						Code
+						<span class="popup_simple_box">
+							<raiz-component name="{package-url}::/doc/input_checkbox"></raiz-component>
+						</span>
+					</a>
+
+				</div>
+				<div class="column  padding-right ">
+
+
+					<label class="radio" ><input type="radio" name="radio" checked> <span>Radio 1</span></label>							
+						<label class="radio"><input type="radio" name="radio"> <span>Radio 2</span></label>	
+
+					<hr class="-separator -small">
+					<a class="popup_simple" tabindex="-1">
+						Code
+						<span class="popup_simple_box">
+							<raiz-component name="{package-url}::/doc/input_radio"></raiz-component>
+						</span>
+					</a>
+
+				</div>
+			</div>
+
+
+			<hr class="-separator -middle">
+
+			<div class="line ">
+				<div class="column col3 padding-right ">
+
+					<label>Submit</label>
+					<input type="button" value="Submit" class="button -primary ">
+					<input type="button" value="Cancel" class="button -border ">
+
+
+					<hr class="-separator -small">
+					<a class="popup_simple" tabindex="-1">
+						Code
+						<span class="popup_simple_box">
+							<raiz-component name="{package-url}::/doc/input_submit"></raiz-component>
+						</span>
+					</a>
+
+				</div>
+			</div>
+
+
+
+
+			<hr class="-separator -line">
+
+			<h3>Form Example</h3>
 			<form>
 
 				<div class="line ">
@@ -77,33 +209,7 @@
 				
 			</form>
 
-			<hr class="-separator -small">
-
-			<details>
-			  <summary class="-primary-text">Code Input</summary>
-			  <pre class="code vh30" ><code class=""></code></pre>
-			</details>
-
-			<details>
-			  <summary class="-primary-text">Code Select</summary>
-			  <pre class="code vh30" ><code class=""></code></pre>
-			</details>
-
-			<details>
-			  <summary class="-primary-text">Code Checkbox</summary>
-			  <pre class="code vh30" ><code class=""></code></pre>
-			</details>
-
-			<details>
-			  <summary class="-primary-text">Code Radio</summary>
-			  <pre class="code vh30" ><code class=""></code></pre>
-			</details>
-
-			<details>
-			  <summary class="-primary-text">Code Input File </summary>
-			  <pre class="code vh30" ><code class=""></code></pre>
-			</details>
-
+			
 
 			<hr class="-separator ">
 
@@ -145,11 +251,13 @@
 				</div>
 			</form>
 
-			<hr class="-separator -small">
-			<details>
-			  <summary class="-primary-text">Code Input </summary>
-			  <pre class="code vh30" ><code class=""></code></pre>
-			</details>
+			<hr class="-separator ">
+			<a class="popup_simple" tabindex="-1">
+				Code
+				<span class="popup_simple_box">
+					<raiz-component name="{package-url}::/doc/input_flat"></raiz-component>
+				</span>
+			</a>
 
 		</div>
 	</div>
