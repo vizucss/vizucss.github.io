@@ -17,7 +17,7 @@ var main = (function(){
 				document.body.classList.remove('--default');
 				document.body.classList.remove('--dark');
 
-				if(value !== 'default')
+				if(value !== 'empty')
 				document.body.classList.add('--'+value);
 			}
 		}
