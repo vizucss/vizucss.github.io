@@ -130,6 +130,11 @@
 					</a>
 
 				</div>
+				<div class="column  padding-right ">
+					<label>Field</label>
+					<textarea name="name" placeholder="Field" class="input"></textarea>
+					<cite>This is optional comment of a citation</cite>
+				</div>
 			</div>
 
 
@@ -250,13 +255,33 @@
 
 					</div>
 				</div>
+
+				<div class="line mobile-nobreak">
+					<div class="column col3 padding-right ">
+
+						<div class="input-float flatmodel">
+						      <textarea placeholder="Description"></textarea>
+						</div>
+
+					</div>
+				</div>
+
 			</form>
 
 			<hr class="-separator ">
 			<a class="popup_simple" tabindex="-1">
-				Code
+				Code input
 				<span class="popup_simple_box">
 					<raiz-component name="{package-url}::/doc/input_flat"></raiz-component>
+				</span>
+			</a>
+		
+			<hr class="-separator -small">
+
+			<a class="popup_simple" tabindex="-1">
+				Code textarea
+				<span class="popup_simple_box">
+					<raiz-component name="{package-url}::/doc/textarea_flat"></raiz-component>
 				</span>
 			</a>
 
